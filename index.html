@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css"/>
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div class="left">
+        <img src="images/cloud-reduced.jpg" alt="image of cloud">
+        <div class="photo">
+            Photo by <a href="https://unsplash.com/@wzimmermann?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Wolf Zimmermann</a> on <a href="https://unsplash.com/photos/white-and-gray-clouds-6sf5rf8QYFE?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        </div>
+        <div class="overlay">It's a sign up</div>
+    </div>
+    <div class="right">
+        <div class="blurb">
+            <b>
+            <p>This is not a real online service! You know you need something like this in your life
+                to help you realise your deepest dreams. Sign up <i>now</i> to get started.
+            </p>
+            <p>You <i>know</i> you want to.</p>
+            </b>
+        </div>
+        <form id="my-form" onsubmit="return false" method="post">
+            <p class="form-blurb">Let's do this!</p>
+            <div class="form-container">
+                <div class="left-form">
+                    <p>
+                        <label for="first-name">FIRST NAME</label>
+                        <br>
+                        <input type="text" id="first-name" name="first_name" maxlength="100" required/>
+                    </p>
+                    <p>
+                        <label for="last-name">LAST NAME</label>
+                        <br>
+                        <input type="text" id="last-name" name="last_name" maxlength="100" required/>
+                    </p>
+                    <p>
+                        <label for="email">EMAIL</label>
+                        <br>
+                        <input type="email" id="mail" name="user_email" maxlength="100" required/>
+                    </p>
+                </div>
+                <div class="right-form">
+                    <p>
+                        <label for="phone">PHONE NUMBER</label>
+                        <br>
+                        <input type="text" id="phone-number" name="phone_number" pattern="^([\(\)\+0-9\s\-\#]+)$"/> 
+                    </p>
+                    <p>
+                        <label for="password">PASSWORD</label>
+                        <br>
+                        <input type="password" id="user-password" name="user_password" minlength="6" maxlength="100" autocomplete="new-password" required/>
+                    </p>
+                    <p>
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <br>
+                        <input type="password" id="user-confirm-password" name="user_confirm_password" minlength="6" maxlength="100" autocomplete="new-password" required/>
+                    </p>
+                </div>
+            </div>
+        </form>
+        <div class="create-container">
+            <div class="create">
+                <button type="submit" form="my-form">Create Account</button>
+            </div>
+            <div class="bottom-create">
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

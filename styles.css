@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Smooky";
+    src: url('fonts/Smooky.otf') format('opentype');
+}
+
+body {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.left {
+    position: relative;
+    flex-direction: column;
+}
+
+.photo {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+}
+
+img {
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(0, 0, 0, 0.15);
+    color: white;
+    font-family: 'Smooky';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xxx-large;
+}
+
+.right {
+    font-size: larger;
+    padding-top: 100px;
+    flex-direction: column;
+    background-color:ghostwhite;
+}
+
+.blurb {
+    padding: 30px;
+}
+
+.bottom-create {
+    font-size: small;
+}
+
+form {
+    background-color: white;
+    padding: 30px;
+    box-shadow: inset 0px -8px 6px -6px gainsboro;
+}
+
+.form-blurb {
+    font-size: larger;
+}
+
+.form-container {
+    display: flex;
+    font-size: small;
+}
+
+input {
+    margin-right: 20px;
+    height: 20px;
+    width: 250px;
+}
+
+.left-form {
+    flex-direction: column;
+}
+
+.right-form {
+    flex-direction: column;
+}
+
+.create-container {
+    padding: 30px;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:valid {
+    border: 0.5px solid black;
+}
+
+button {
+    color: white;
+    font-size: medium;
+    border-radius: 10px;
+    border: none;
+    background-color: skyblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
