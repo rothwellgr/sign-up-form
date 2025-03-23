@@ -76,6 +76,18 @@ input {
     width: 250px;
 }
 
+input:invalid {
+    border: 1px solid red;
+}
+
+input:required {
+    border: 0.5px solid black;
+}
+
+input:valid {
+    border: 0.5px solid black;
+}
+
 .left-form {
     flex-direction: column;
 }
@@ -86,14 +98,6 @@ input {
 
 .create-container {
     padding: 30px;
-}
-
-input:invalid {
-    border: 1px solid red;
-}
-
-input:valid {
-    border: 0.5px solid black;
 }
 
 button {
